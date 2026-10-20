@@ -1,0 +1,148 @@
+
+body {
+    background-color: #008080;
+    display: grid;
+    justify-items: center;
+    font-family: Tahoma, Verdana, "Segoe UI", sans-serif;
+}
+
+.main-container {
+    width: 95vw;
+    display: grid;
+    border: 4px solid #fdffff;
+    background-color: #c3c3c3;
+    margin: 20px;
+}
+
+.sunken {
+    background-color: #c3c3c3;
+    border: 2px solid;
+    border-color: #818181 #fdffff #fdffff #818181
+}
+
+.pressed {
+    background-color: #c3c3c3;
+    border: 2px solid;
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+
+.raised {
+    background-color: #c3c3c3;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50px auto auto 55px 55px 55px;
+    background-color: #010081;
+    color: white;
+    width: 100%;
+}
+
+#header-logo {
+    width: 45px;
+    height: 45px;
+    grid-column: 1;
+    padding: 5px;
+}
+
+#header-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+header h1 {
+    grid-column: 2;
+    justify-self: start;
+    padding-left: 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 24px;
+    margin: 0px;
+    align-self: center;
+}
+
+.header-button {
+    color: black;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #c3c3c3;
+    background-color: #c3c3c3;
+    align-self: center;
+    justify-self: end;
+    margin-right: 5px;
+    border: 2px solid black;
+    font-size: 30px;
+}
+
+#header-button1 {
+    grid-column: 4;
+}
+
+#header-button2 {
+    grid-column: 5;
+}
+
+#header-button3 {
+    grid-column: 6;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 100px 100px 100px auto;
+    grid-template-rows: auto;
+    justify-items: start;
+    padding: 5px;
+    border-bottom: 2px solid #808080;
+}
+
+nav a {
+    padding: 5px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    color: #000000;
+}
+
+nav a:hover[class="free"] {
+    border-color: #ffffff #808080 #808080 #ffffff;
+}
+
+#main-content {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#main-content div {
+    margin: 10px;
+    padding: 10px;
+}
+
+#history ol{
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+#history li{
+    display: grid;
+    grid-template-columns: 75px auto;
+    padding: 10px 10px 20px 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.year{
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+}
+
+#sources a{
+    color: #010081;
+}
