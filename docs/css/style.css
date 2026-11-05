@@ -8,8 +8,8 @@ body {
 }
 
 .main-container {
-  min-width: 450px;
-  width: 75vw;
+  min-width: 350px;
+  width: 90vw;
   border: 4px solid #fdffff;
   background-color: #c3c3c3;
   margin: 20px;
@@ -59,9 +59,9 @@ header {
 }
 
 #header-right {
-  align-self: flex-start;
+  align-self: center;
   margin-top: 3px;
-  min-width: 180px;
+  min-width: 120px;
 }
 
 #header-logo {
@@ -81,19 +81,19 @@ header {
 header h1 {
   padding-left: 10px;
   font-family: "Courier New", Courier, monospace;
-  font-size: 24px;
+  font-size: 20px;
   margin: 0px;
 }
 
 .header-button {
   color: black;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #c3c3c3;
   background-color: #c3c3c3;
   margin-right: 5px;
   border: 2px solid black;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 /* ---------- Navigation bar ----------*/
@@ -132,6 +132,7 @@ footer {
 
 .intro {
   padding: 15px;
+  font-size: 20px;
 }
 
 /*also used by contant.html*/
@@ -177,7 +178,7 @@ footer {
 }
 
 #curiosities div {
-  min-width: 350px;
+  min-width: 300px;
   max-width: 40%;
   margin: 10px;
 }
@@ -195,8 +196,14 @@ footer {
 
 #gallery div img {
   object-fit: contain;
-  max-width: 500px;
-  max-width: 500px;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+#gallery video {
+  object-fit: contain;
+  max-width: 80vw;
+  max-height: 80vh;
 }
 
 #gallery div p {
@@ -228,6 +235,7 @@ footer {
 }
 
 .contact select {
+  width: 95%;
   background-color: #ffffff;
   border-color: #818181 #fdffff #fdffff #818181;
 }
@@ -242,7 +250,7 @@ footer {
 #game {
   display: inline-block;
   padding: 8px;
-  width: 340px;
+  width: 295px;
 }
 
 #game-top {
@@ -270,7 +278,7 @@ footer {
 
 #game-board {
   display: grid;
-  grid-template-columns: repeat(9, 35px);
+  grid-template-columns: repeat(9, 30px);
 }
 
 #game-status {
@@ -278,8 +286,8 @@ footer {
 }
 
 .cell {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   padding: 0px;
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
@@ -291,8 +299,8 @@ footer {
 }
 
 .cell-open {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   padding: 0px;
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
