@@ -1,71 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content=
-  "width=device-width, initial-scale=1.0">
-  <title>Home | Saper: Historia i Ciekawostki</title>
-  <meta name="description" content="Historia gry saper i ciekawostki na jej temat">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main class="main-container">
-    <header>
-      <div id="header-logo">
-	<img src="images/og_logo.png">
-      </div>
-      <h1>Saper: Historia i Ciekawostki</h1>
-      <button class="header-button" id="header-button1"><b>_</b></button>
-      <button class="header-button" id="header-button2"><b>□</b></button>
-      <button class="header-button" id="header-button3"><b>X</b></button>
-    </header>
-    <nav>
-      <a href="index.html" class="pressed">Home</a>
-      <a href="gallery.html" class="free">Gallery</a>
-      <a href="contact.html" class="free">Contact</a>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Saper: Historia i Ciekawostki</title>
+    <meta
+      name="description"
+      content="Historia gry saper i ciekawostki na jej temat"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <div id="main-content">
-      <div id="intro" class="raised">
-	<h2>Saper</h2>
-	<p>Znana gra logiczna w której celem jest odkrycie całej planszy bez naciśnięcia na żadną z ukrytych min.</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-container">
+      <header>
+        <div id="header-left">
+          <div id="header-logo">
+            <img src="images/og_logo.png" />
+          </div>
+          <h1>Saper: Historia i Ciekawostki</h1>
+        </div>
+        <div id="header-right">
+          <button class="header-button" id="header-button1" disabled>
+            <b>_</b>
+          </button>
+          <button class="header-button" id="header-button2" disabled>
+            <b>□</b>
+          </button>
+          <button class="header-button" id="header-button3" disabled>
+            <b>X</b>
+          </button>
+        </div>
+      </header>
+      <nav>
+        <a href="index.html" class="pressed">Home</a>
+        <a href="gallery.html" class="free">Galeria</a>
+        <a href="contact.html" class="free">Kontakt</a>
+      </nav>
+
+      <div id="main-content">
+        <h2>Saper</h2>
+        <p class="raised intro">
+          Znana gra logiczna, której celem jest odkrycie całej planszy bez
+          naciśnięcia na żadną z ukrytych min. Naciśnięcie każdego z pól
+          skutkuje odkryciem go. Jeżeli pod polem nie znajduje się mina,
+          pokazuje się na nim liczba mówiąca ile min znajduje się w najbliższych
+          8 polach wokół niego. Brak liczby oznacza brak min i pobliskie pola
+          również się odkrywają. Poniżej znajduje się odwzorowanie klasycznej
+          wersji Sapera w którą zachęcam do zagrania. Czerwona liczba po lewej
+          stronie pokazuje ilość min, natomiast prawa czas gry, Przycisk z buźką
+          resetuje grę. Lewy przycisk myszy odkrywa pole, prawy stawia flagę
+          którą można oznaczać pola z minami. Tryb stawiania flag odwraca
+          działanie przycisków myszy (Przydatne na urządzeniach mobilnych gdzie
+          nie ma prawego przycisku)
+        </p>
+
+        <div id="game" class="raised">
+          <div id="game-bar"></div>
+          <div id="game-top" class="sunken">
+            <div class="game-display" id="mine-counter">010</div>
+            <button id="game-reset" class="raised">:)</button>
+            <div class="game-display" id="timer">000</div>
+          </div>
+          <div id="game-board" class="raised"></div>
+          <label
+            ><input type="checkbox" id="flag-mode" />Tryb stawiania flag</label
+          ><br />
+          <span id="game-status"></span>
+        </div>
+        <h2>Historia</h2>
+        <section id="history" class="raised">
+          <ol>
+            <li>
+              <span class="year">1989</span>
+              <span
+                >PM Mine, jako pierwsza oficjalna wersja sapera została napisana
+                dla firmy IMB dla ich systemu OS/2 przez Curt'a Johnson'a oraz
+                Robert'a Donner'a. Gra rozgrywała się na siatce 16*16 z
+                ograniczeniem czasowym 120 sekund na rozgrywkę. Insipracją dla
+                programisty była wydana w 1983 roku przez Sinclair Spectrum gra
+                "Mined-Out" oraz klasyczna gra w statki na kartce papieru.</span
+              >
+            </li>
+            <li>
+              <span class="year">1990</span>
+              <span
+                >Microsoft postanawia że ich nowy system Windows 3.0 potrzebuje
+                gier, więc pracownicy dostali za zadanie stworzenie ich i tak
+                powstał
+                <i>"Microsoft Entertainment Pack for Windows"</i> zawierający
+                siedem gier i wygaszacz ekranu za jedyne $39.95. W tej paczce
+                znalazł się przede wszystkim port Sapera uwielbiany przez
+                wszystkich biorących udział w tworzeniu gier.</span
+              >
+            </li>
+            <li>
+              <span class="year">1992</span>
+              <span
+                >Przez ostatnie dwa lata Microsoft wypuszcza 3 kolejne paczki
+                gier, a od Windows'a 3.1 Saper staje się nierozłączną częścią
+                systemu.</span
+              >
+            </li>
+            <li>
+              <span class="year">1999</span>
+              <span
+                >Powstaje kampania
+                <i>"International Campaign to Ban Winmine"</i> której uczestnicy
+                twierdzą, że gra Saper jest nietaktowna wobec ofiar pól minowych
+                i zaproponowali zastąpienie min kwiatami. Zmiana ta została
+                wprowadzona tylko w niektórych wersjach systemu Windows 2000,
+                Windows ME, oraz Windows XP, a sam Saper przyjął nazwę
+                <i>"Flower Field" ("Pole Kwiatów")</i>.</span
+              >
+            </li>
+            <li>
+              <span class="year">2000</span>
+              <span
+                >Matematyk Richard Kaye udowadnia że Saper jest problemem
+                NP-zupełnym</span
+              >
+            </li>
+            <li>
+              <span class="year">2012</span>
+              <span
+                >Windows 8 zostaje wydany jako pierwsza wersja Windowsa nie
+                zawierająca w pakiecie Sapera. Od tego czasu grę można
+                zainstalować w Microsoft Store za darmo*<br /><a
+                  href="https://en.wiktionary.org/wiki/enshittification#English"
+                  target="blank"
+                  >*Pierwsza wersja gry zawierała 30 sekundowe reklamy i
+                  subskrypcje żeby je wyłączyć</a
+                ></span
+              >
+            </li>
+          </ol>
+        </section>
+
+        <h2>Ciekawostki</h2>
+        <section class="wrapping" id="curiosities">
+          <div class="raised">
+            <h3>Tajny kod</h3>
+            <p>
+              W wersjach Sapera na Windowsa 3.1, 2000 i XP wprowadzenie na
+              klawiaturze kodu "XYZZY[Shift][Enter]" sprawiało że lewy górny
+              piksel monitora zmieniał kolor w zależności od tego czy pod
+              kursorem znajdowała się kratka z miną czy nie. Robert Donner dodał
+              tą funkcjonalność żeby jego kolega mógł zaimponować innym swoimi
+              umiejętnościami przewidywania gdzie są miny a kod sam w sobie jest
+              nawiązaniem do gry <i>"Colossal Cave Adventure"</i> z 1976
+            </p>
+          </div>
+          <div class="raised">
+            <h3>Softlock</h3>
+            <p>
+              W pierwszych wersjach Sapera na początkującym poziomie trudności 1
+              na 800 000 gier wygrywało się jednym kliknięciem, jednak funkcja
+              sprawdzająca czy gra się zakończyła była wywoływana dopiero od
+              drugiego kliknięcia przez co zegar się nie zatrzymywał i jedyne co
+              zostawało to naciśnięcie na minę i przegranie
+            </p>
+          </div>
+          <div class="raised">
+            <h3>Uciekające okno</h3>
+            <p>
+              Zmienienie poziomu trudności przesuwało okno z grą o 1 piksel do
+              góry. Po wystarczającej ilości przesunięć można było stracić
+              dostęp menu, którego odzyskanie wymagało edytowania Winmine.ini,
+              zmienienia rozdzielczości ekranu lub używania skrótów klawiszowych
+              do przesunięcia okna z grą. Błąd naprawiono razem z wersją na
+              Windowsa 2000
+            </p>
+          </div>
+          <div class="raised">
+            <h3>Rekordy</h3>
+            <p>
+              Na świecie rozgrywane są zawody w których gracze starają się jak
+              najszybciej przejść 3 podstawowe poziomy trudności Sapera. W 2014
+              roku Polak Kamil Murański ustalił rekord Guinness'a dokonując tego
+              w 38.893s. Obecnie według społecznościowych rankingów Chińczyk
+              Ze-En JU jest rekordzistą z wynikiem 32.88s
+            </p>
+          </div>
+        </section>
       </div>
-      <div id="history" class="raised">
-	<h2>Historia</h2>
-	<ol>
-	  <li>
-	    <span class="year">1989</span>
-	    <span>PM Mine, jako pierwsza oficjalna wersja sapera została napisana dla firmy IMB dla ich systemu OS/2 przez Curt'a Johnson'a oraz Robert'a Donner'a. Gra rozgrywała się na siatce 16*16 z ograniczeniem czasowym 120 sekund na rozgrywkę. Insipracją dla programisty była wydana w 19083 roku przez Sinclair Spectrum gra "Mined-Out" oraz klasyczna gra w statki na kartce papieru.</span>
-	  </li>
-	  <li>
-	    <span class="year">1990</span>
-	    <span>Microsoft postanawia że ich nowy system Windows 3.0 potrzebuje gier, więc pracownicy dostali za zadanie stworzenie ich i tak powstał <i>"Microsoft Entertainment Pack for Windows"</i> zawierający siedem gier i wygaszać ekranu za jedyne $39.95. W tej paczce znalazł się przede wszystkim port Sapera uwielbiany przez wszystkich biorących udział w tworzeniu gier. Niedługo później Microsoft wypuścił dwie kolejne kolekcje gier a od Windows'a 3.1 pierwsza paczka była wydawana wraz w zestawie z systemem</span>
-	  </li>
-	  <li>
-	    <span class="year">1992</span>
-	    <span>Przez ten czas Microsoft wypuszcza 3 kolejne paczki gier, a od Windows'a 3.1 Saper staje się nierozłączną częścią systemu.</span>
-	  </li>
-	  <li>
-	    <span class="year">1999</span>
-	    <span>Powstaje kampania <i>"International Campaign to Ban Winmine"</i> której uczestnicy twierdzą, że gra Saper jest nietaktowna wobec ofiar pól minowych i zaproponowali zastąpienie min kwiatami. Zmiana ta została wprowadzona tylko w niektórych wersjach systemu Windows 2000, Windows ME, oraz Windows XP, a sam Saper przyjął nazwę <i>"Flower Field" ("Pole Kwiatów")</i>.</span>
-	  </li>
-	  <li>
-	    <span class="year">2000</span>
-	    <span>Matematyk Richard Kaye udowadnia że Saper jest problemem NP-zupełnym
-	</ol>
-      </div>
-    </div>
-    <footer class="sunken">
-      <p>© Jakub Czapliński projekt 1 na Wprowadzenie do Aplikacji Internetowych</p>
-      <p>Źródła:</p>
-      <div id="sources">
-	<a href="https://colorswall.com/palette/102495">paleta kolorów</a>
-	<a href="https://minesweepergame.com/history/windows-entertainment-pack.php">minesweepergame.com</a>
-	<a href="https://en.wikipedia.org/wiki/Microsoft_Minesweeper">wikipedia.org</a>
-	<a href="https://freeminesweeper.org/minesweeper-history.php">freeminesweeper.org</a>
-	<a href="https://academic.timwylie.com/17CSCI4341/minesweeper_kay.pdf">Saper jest problememm NP-zupełnym</a>
-      </div>
-  </main>
-  <script src="index.js"></script>
-</body>
+      <footer class="sunken">
+        <p>
+          © Jakub Czapliński projekt 1 na Wprowadzenie do Aplikacji
+          Internetowych
+        </p>
+        <p>Źródła:</p>
+        <section id="sources">
+          <a href="https://colorswall.com/palette/102495">paleta kolorów</a>
+          <a href="https://minesweepergame.com/history.php"
+            >minesweepergame.com</a
+          >
+          <a href="https://en.wikipedia.org/wiki/Microsoft_Minesweeper"
+            >wikipedia.org</a
+          >
+          <a href="https://freeminesweeper.org/minesweeper-history.php"
+            >freeminesweeper.org</a
+          >
+          <a
+            href="https://minesweepergame.com/math/minesweeper-is-np-complete-2005.pdf"
+            >Saper jest problemem NP-zupełnym</a
+          >
+          <a
+            href="https://www.guinnessworldrecords.com/world-records/fastest-completions-of-minesweeper"
+            >Rekord Kamila Murańskiego</a
+          >
+        </section>
+      </footer>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
 </html>

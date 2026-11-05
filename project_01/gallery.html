@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Saper: Historia i Ciekawostki</title>
+    <meta
+      name="description"
+      content="Historia gry saper i ciekawostki na jej temat"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <header>
+        <div id="header-left">
+          <div id="header-logo">
+            <img src="images/og_logo.png" />
+          </div>
+          <h1>Saper: Historia i Ciekawostki</h1>
+        </div>
+        <div id="header-right">
+          <button class="header-button" id="header-button1" disabled>
+            <b>_</b>
+          </button>
+          <button class="header-button" id="header-button2" disabled>
+            <b>□</b>
+          </button>
+          <button class="header-button" id="header-button3" disabled>
+            <b>X</b>
+          </button>
+        </div>
+      </header>
+      <nav>
+        <a href="index.html" class="free">Home</a>
+        <a href="gallery.html" class="pressed">Galeria</a>
+        <a href="contact.html" class="free">Kontakt</a>
+      </nav>
+
+      <div class="wrapping" id="gallery">
+        <div class="raised">
+          <img src="./images/PMMine.jpg" />
+          <p>Pierwsza wersja sapera<br />na IBM 2.0</p>
+        </div>
+        <div class="raised">
+          <img src="./images/Flower_Field.png" />
+          <p>Flower Field</p>
+        </div>
+        <div class="raised">
+          <img src="./images/moving-window-bug-windows-98.jpg" />
+          <p>
+            Okno które przesunęło się za wysoko <br />
+            przez zmienianie ustawień
+          </p>
+        </div>
+        <div class="raised">
+          <img src="./images/wep-minesweeper.jpg" />
+          <p>Windows Entertainment Pack</p>
+        </div>
+        <div class="raised">
+          <img src="./images/xyzzy-minesweper-bot-2008.jpg" />
+          <p>
+            Przykład programu używającego kodu xyzzy <br />
+            żeby wygrać
+          </p>
+        </div>
+        <div class="raised">
+          <video width="640" height="480" controls>
+            <source
+              src="./videos/rekord_kamila_muranskiego.mp4"
+              type="video/mp4"
+            />
+            Twoja przeglądarka nie wspiera tagu video
+          </video>
+          <p>Poprzedni rekord świata ustalony przez<br />Kamila Murańskiego</p>
+        </div>
+      </div>
+
+      <footer class="sunken">
+        <p>
+          © Jakub Czapliński projekt 1 na Wprowadzenie do Aplikacji
+          Internetowych
+        </p>
+        <p>Źródła:</p>
+        <div id="sources">
+          <a href="https://colorswall.com/palette/102495">paleta kolorów</a>
+          <a href="https://minesweepergame.com/history.php"
+            >minesweepergame.com</a
+          >
+          <a href="https://en.wikipedia.org/wiki/Microsoft_Minesweeper"
+            >wikipedia.org</a
+          >
+          <a href="https://freeminesweeper.org/minesweeper-history.php"
+            >freeminesweeper.org</a
+          >
+          <a
+            href="https://minesweepergame.com/math/minesweeper-is-np-complete-2005.pdf"
+            >Saper jest problemem NP-zupełnym</a
+          >
+          <a
+            href="https://www.guinnessworldrecords.com/world-records/fastest-completions-of-minesweeper"
+            >Rekord Kamila Murańskiego</a
+          >
+        </div>
+      </footer>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt | Saper: Historia i Ciekawostki</title>
+    <meta
+      name="description"
+      content="Historia gry saper i ciekawostki na jej temat"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <header>
+        <div id="header-left">
+          <div id="header-logo">
+            <img src="images/og_logo.png" />
+          </div>
+          <h1>Saper: Historia i Ciekawostki</h1>
+        </div>
+        <div id="header-right">
+          <button class="header-button" id="header-button1" disabled>
+            <b>_</b>
+          </button>
+          <button class="header-button" id="header-button2" disabled>
+            <b>□</b>
+          </button>
+          <button class="header-button" id="header-button3" disabled>
+            <b>X</b>
+          </button>
+        </div>
+      </header>
+      <nav>
+        <a href="index.html" class="free">Home</a>
+        <a href="gallery.html" class="free">Galeria</a>
+        <a href="contact.html" class="pressed">Kontakt</a>
+      </nav>
+
+      <div id="main-content">
+        <form class="contact raised">
+          <label for="email">Email</label>
+          <input
+            class="contact-input"
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="example@gmail.com"
+            required
+          />
+          <label for="subject">Temat</label>
+          <select name="subjects" id="subject" required>
+            <option value="">-- Wybierz temat --</option>
+            <option value="new-data">
+              Zaproponowanie nowych informacji na stronę
+            </option>
+            <option value="bug-report">Zgłoszenie błedu na stronie</option>
+            <option value="other">Inne</option>
+          </select>
+          <label for="message">Wiadomość</label>
+          <textarea
+            class="contact-input"
+            id="message"
+            name="message"
+            placeholder="Tutaj wpisz swoją wiadomość"
+            required
+          ></textarea>
+          <button type="submit" class="raised" id="contact-button">
+            Wyślij
+          </button>
+        </form>
+      </div>
+
+      <footer class="sunken">
+        <p>
+          © Jakub Czapliński projekt 1 na Wprowadzenie do Aplikacji
+          Internetowych
+        </p>
+        <p>Źródła:</p>
+        <div id="sources">
+          <a href="https://colorswall.com/palette/102495">paleta kolorów</a>
+          <a href="https://minesweepergame.com/history.php"
+            >minesweepergame.com</a
+          >
+          <a href="https://en.wikipedia.org/wiki/Microsoft_Minesweeper"
+            >wikipedia.org</a
+          >
+          <a href="https://freeminesweeper.org/minesweeper-history.php"
+            >freeminesweeper.org</a
+          >
+          <a
+            href="https://minesweepergame.com/math/minesweeper-is-np-complete-2005.pdf"
+            >Saper jest problemem NP-zupełnym</a
+          >
+          <a
+            href="https://www.guinnessworldrecords.com/world-records/fastest-completions-of-minesweeper"
+            >Rekord Kamila Murańskiego</a
+          >
+        </div>
+      </footer>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
