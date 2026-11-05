@@ -8,6 +8,7 @@ body {
 }
 
 .main-container {
+  min-width: 450px;
   width: 75vw;
   border: 4px solid #fdffff;
   background-color: #c3c3c3;
