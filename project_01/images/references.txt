@@ -1,1 +1,3 @@
 PMMine.jpg:  https://minesweepergame.com/database/games.php?id=7
+Flower_Field: https://en.wikipedia.org/wiki/Microsoft_Minesweeper#/media/File:Minesweeper_in_Windows_7_Intermediate_Flowers.png
+moving-window-bug-windows-98: https://minesweepergame.com/history/moving-window-bug.php

@@ -1,148 +1,330 @@
-
+/*----------  Styles shared by all pages ----------*/
 body {
-    background-color: #008080;
-    display: grid;
-    justify-items: center;
-    font-family: Tahoma, Verdana, "Segoe UI", sans-serif;
+  background-color: #008080;
+  display: flex;
+  justify-content: center;
+  font-family: Tahoma, Verdana, "Segoe UI", sans-serif;
+  font-size: 18px;
 }
 
 .main-container {
-    width: 95vw;
-    display: grid;
-    border: 4px solid #fdffff;
-    background-color: #c3c3c3;
-    margin: 20px;
+  width: 75vw;
+  border: 4px solid #fdffff;
+  background-color: #c3c3c3;
+  margin: 20px;
 }
 
 .sunken {
-    background-color: #c3c3c3;
-    border: 2px solid;
-    border-color: #818181 #fdffff #fdffff #818181
+  background-color: #c3c3c3;
+  border: 2px solid;
+  border-color: #818181 #fdffff #fdffff #818181;
 }
 
 .pressed {
-    background-color: #c3c3c3;
-    border: 2px solid;
-    border-color: #808080 #ffffff #ffffff #808080;
+  background-color: #c3c3c3;
+  border: 2px solid;
+  border-color: #808080 #ffffff #ffffff #808080;
 }
 
 .raised {
-    background-color: #c3c3c3;
-    border: 2px solid;
-    border-color: #ffffff #808080 #808080 #ffffff;
+  background-color: #c3c3c3;
+  border: 2px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
 }
 
+.wrapping {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2 {
+  margin: 10px;
+}
+
+/*---------- Header ----------*/
 header {
-    display: grid;
-    grid-template-columns: 50px auto auto 55px 55px 55px;
-    background-color: #010081;
-    color: white;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #010081;
+  color: white;
+  width: 100%;
+}
+
+#header-left {
+  display: flex;
+  align-items: center;
+}
+
+#header-right {
+  align-self: flex-start;
+  margin-top: 3px;
+  min-width: 180px;
 }
 
 #header-logo {
-    width: 45px;
-    height: 45px;
-    grid-column: 1;
-    padding: 5px;
+  min-width: 45px;
+  width: 45px;
+  min-height: 45px;
+  height: 45px;
+  padding: 5px;
 }
 
 #header-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 header h1 {
-    grid-column: 2;
-    justify-self: start;
-    padding-left: 10px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 24px;
-    margin: 0px;
-    align-self: center;
+  padding-left: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  margin: 0px;
 }
 
 .header-button {
-    color: black;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #c3c3c3;
-    background-color: #c3c3c3;
-    align-self: center;
-    justify-self: end;
-    margin-right: 5px;
-    border: 2px solid black;
-    font-size: 30px;
+  color: black;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c3c3c3;
+  background-color: #c3c3c3;
+  margin-right: 5px;
+  border: 2px solid black;
+  font-size: 30px;
 }
 
-#header-button1 {
-    grid-column: 4;
-}
-
-#header-button2 {
-    grid-column: 5;
-}
-
-#header-button3 {
-    grid-column: 6;
-}
+/* ---------- Navigation bar ----------*/
 
 nav {
-    display: grid;
-    grid-template-columns: 100px 100px 100px auto;
-    grid-template-rows: auto;
-    justify-items: start;
-    padding: 5px;
-    border-bottom: 2px solid #808080;
+  display: flex;
+  justify-items: start;
+  gap: 10px;
+  padding: 5px;
+  border-bottom: 2px solid #808080;
 }
 
 nav a {
-    padding: 5px 15px;
-    color: #ffffff;
-    text-decoration: none;
-    border: 2px solid transparent;
-    color: #000000;
+  padding: 5px 15px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  color: #000000;
 }
 
 nav a:hover[class="free"] {
-    border-color: #ffffff #808080 #808080 #ffffff;
+  border-color: #ffffff #808080 #808080 #ffffff;
 }
 
+/* ---------- Footer styling ---------- */
+footer {
+  font-size: 16px;
+  margin: 10px;
+  padding: 5px;
+}
+
+#sources a {
+  color: #010081;
+}
+
+/*---------- index.html styling ---------- */
+
+.intro {
+  padding: 15px;
+}
+
+/*also used by contant.html*/
 #main-content {
-    display: grid;
-    grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
 #main-content div {
-    margin: 10px;
-    padding: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-#history ol{
-    list-style: none;
-    margin: 5px;
-    padding: 5px;
+/* History section*/
+#history ol {
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
 }
 
-#history li{
-    display: grid;
-    grid-template-columns: 75px auto;
-    padding: 10px 10px 20px 10px;
-    border-bottom: 1px solid #000000;
+#history li {
+  display: grid;
+  grid-template-columns: 75px auto;
+  padding: 10px 10px 20px 10px;
+  border-bottom: 1px solid #000000;
 }
 
-.year{
-    font-family: "Courier New", Courier, monospace;
-    font-weight: bold;
+#history li a {
+  height: 100px;
+  text-decoration: none;
+  color: #000000;
 }
 
-footer {
-    font-size: 16px;
-    margin: 10px;
-    padding: 5px;
+.year {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
 }
 
-#sources a{
-    color: #010081;
+/* curiosities section */
+#curiosities {
+  justify-content: center;
+}
+
+#curiosities div {
+  min-width: 350px;
+  max-width: 40%;
+  margin: 10px;
+}
+
+/* ---------- gallery.html styling ---------- */
+#gallery {
+  justify-content: center;
+  align-items: center;
+}
+
+#gallery div {
+  padding: 10px;
+  margin: 10px;
+}
+
+#gallery div img {
+  object-fit: contain;
+  max-width: 500px;
+  max-width: 500px;
+}
+
+#gallery div p {
+  overflow: hidden;
+  text-align: center;
+}
+
+/* ---------- contact.html styling ----------*/
+.contact {
+  font: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 600px;
+}
+
+.contact * {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font: inherit;
+}
+
+.contact-input {
+  background-color: #ffffff;
+  border-color: #818181 #fdffff #fdffff #818181;
+  width: 95%;
+  box-sizing: border-box;
+}
+
+.contact select {
+  background-color: #ffffff;
+  border-color: #818181 #fdffff #fdffff #818181;
+}
+
+#contact-button {
+  padding: 10px;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* ---------- Minesweeper game styling ----------*/
+#game {
+  display: inline-block;
+  padding: 8px;
+  width: 340px;
+}
+
+#game-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-display {
+  background: #000000;
+  color: #ff0000;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+#game-reset {
+  width: 42px;
+  height: 42px;
+  font-size: 1.5rem;
+  background: #c3c3c3;
+  cursor: pointer;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(9, 35px);
+}
+
+#game-status {
+  min-height: 100px;
+}
+
+.cell {
+  width: 35px;
+  height: 35px;
+  padding: 0px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  background: #c3c3c3;
+  border: 2px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+}
+
+.cell-open {
+  width: 35px;
+  height: 35px;
+  padding: 0px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  cursor: default;
+  border: 1px solid #000000;
+  background: #c3c3c3;
+}
+
+.boom {
+  background: #ff0000;
+}
+.n1 {
+  color: #0000ff;
+}
+.n2 {
+  color: #008000;
+}
+.n3 {
+  color: #ff0000;
+}
+.n4 {
+  color: #000080;
+}
+.n5 {
+  color: #800000;
+}
+.n6 {
+  color: #008080;
+}
+.n7 {
+  color: #000000;
+}
+.n8 {
+  color: #555555;
 }
