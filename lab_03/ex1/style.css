@@ -1,0 +1,32 @@
+html {
+  background-color: #ddbeaa;
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  font-size: 20px;
+}
+
+p {
+  font-size: 36px;
+}
+
+#button-box button {
+  margin: 15px;
+}
+
+#stopwatch {
+}

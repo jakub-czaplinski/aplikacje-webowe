@@ -1,0 +1,57 @@
+html {
+  background-color: #ddbeaa;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  padding: 20px;
+}
+
+#options {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+table {
+  border: 3px solid #000;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  background-color: #ffffff;
+}
+
+td {
+  border: 3px solid #000;
+  padding: 5px;
+}
+
+.photoCell {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.photoCell img {
+  max-width: 100%;
+  height: auto;
+}
+
+.titleCell {
+}
+
+.descCell {
+}
+
+.hidden {
+  display: none;
+}

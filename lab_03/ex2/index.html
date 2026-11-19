@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <label for="min-pass-len">Minimalna długość hasła</label>
+      <input
+        type="number"
+        name="min-pass-len"
+        id="min-pass-len"
+        placeholder="10"
+        required
+      />
+      <label for="max-pass-len">Maksymalna długość hasła</label>
+      <input
+        type="number"
+        name="max-pass-len"
+        id="max-pass-len"
+        placeholder="15"
+        required
+      />
+      <label for="with-upper">Czy hasło może zawierać wielkie litery?</label>
+      <input type="checkbox" name="with-upper" id="with-upper" />
+      <label for="with-special">Czy hasło może zwierać znaki specjalne?</label>
+      <input type="checkbox" name="with-special" id="with-special" />
+      <button type="generate" id="generate">Wygeneruj hasło</button>
+      <span id="info"></span>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
