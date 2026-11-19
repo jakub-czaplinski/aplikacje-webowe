@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <div id="options">
+        <div>
+          <label for="filter">Filtruj po frazie:</label>
+          <input
+            type="text"
+            name="filter"
+            id="filterInput"
+            placeholder="something"
+          />
+        </div>
+        <div>
+          <label for="sorting">Opcje sortowania:</label>
+          <select name="sorting" id="sorting">
+            <option value="default">Brak</option>
+            <option value="ascending">Rosnąco</option>
+            <option value="descending">Malejąco</option>
+          </select>
+        </div>
+      </div>
+      <table id="products"></table>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

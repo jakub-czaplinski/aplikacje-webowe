@@ -1,0 +1,30 @@
+html {
+  background-color: #ddbeaa;
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+#info {
+  color: red;
+}
+
+input,
+button {
+  min-width: 25px;
+  min-height: 25px;
+  font-size: 18px;
+}
+
